@@ -1,0 +1,15 @@
+header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 20px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    border-bottom: 5px solid #EBCC40;
+    text-transform: lowercase;
+    padding: 0;
+}

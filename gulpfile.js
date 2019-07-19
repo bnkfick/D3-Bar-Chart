@@ -14,6 +14,10 @@ const gulp = require('gulp'),
     gulp.dest(dest + 'css');
   });
 
+  gulp.task('img', function() {
+    gulp.dest(dest + 'img');
+  });
+
   gulp.task('js', function() {
     gulp.dest(dest + 'js');
   });
@@ -21,6 +25,7 @@ const gulp = require('gulp'),
   gulp.task('watch', function() {
     gulp.watch(dest + '**/*.css', ['css']);
     gulp.watch(dest + '**/*.js', ['js']);
+    gulp.watch(dest + '**/*.png', ['img']);
     gulp.watch(dest + '**/*.html', ['html']);
   });
 
