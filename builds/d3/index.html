@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>D3 Temperature Graph</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,900" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,900"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-     
-          <div class="container brand">
-                  <h1><a href="#">barbara fick.</a></h1>
-          </div>
-
-  </header>
-
-  <div class="container">
-
-    <h2>Weather Forecast: <span class="small">Orlando</span></h2>
-    <table class="table table table-hover">
-      <thead>
-        <tr class="head">
-          <th scope="col" class="head-date">Date</th>
-          <th scope="col" class="head-temp-low">Low</th>
-          <th scope="col" class="head-temp-high">High</th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
-
-    <div id="viz"></div>
-
-  </div><!-- container -->
+      <div class="container brand">
+        <h1><a href="#">barbara fick.</a></h1>
+      </div>
+    </header>
 
     <div class="container">
+      <h2>Weather Forecast: <span class="small">Orlando</span></h2>
+      <table class="table table table-hover">
+        <thead>
+          <tr class="head">
+            <th scope="col" class="head-date">Date</th>
+            <th scope="col" class="head-temp-low">Low</th>
+            <th scope="col" class="head-temp-high">High</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 
+      <div id="viz"></div>
+    </div>
+    <!-- container -->
+
+    <div class="container">
       <h2>Weather Forecast: <span class="small">Denver</span></h2>
       <table class="table table table-hover">
         <thead>
@@ -52,35 +50,116 @@
         <tbody>
           <tr class="day">
             <th scope="row" class="day-date">06/30/2019</th>
-            <td class="day-low"><span class="temp">87</span>&deg; <span class="notation">F</span></td>
-            <td class="day-high"><span class="temp">68</span>&deg; <span class="notation">F</span></td>
+            <td class="day-low">
+              <span class="temp">87</span>&deg; <span class="notation">F</span>
+            </td>
+            <td class="day-high">
+              <span class="temp">68</span>&deg; <span class="notation">F</span>
+            </td>
           </tr>
           <tr class="day">
             <th scope="row" class="day-date">06/01/2019</th>
-            <td class="day-low"><span class="temp">64</span>&deg; <span class="notation">F</span></td>
-            <td class="day-high"><span class="temp">85</span>&deg; <span class="notation">F</span></td>
+            <td class="day-low">
+              <span class="temp">64</span>&deg; <span class="notation">F</span>
+            </td>
+            <td class="day-high">
+              <span class="temp">85</span>&deg; <span class="notation">F</span>
+            </td>
           </tr>
           <tr class="day">
-            <th scope="row"class="day-date">06/02/2019</th>
-            <td class="day-low"><span class="temp">65</span>&deg; <span class="notation">F</span></td>
-            <td class="day-high"><span class="temp">89</span>&deg; <span class="notation">F</span></td>
+            <th scope="row" class="day-date">06/02/2019</th>
+            <td class="day-low">
+              <span class="temp">65</span>&deg; <span class="notation">F</span>
+            </td>
+            <td class="day-high">
+              <span class="temp">89</span>&deg; <span class="notation">F</span>
+            </td>
           </tr>
           <tr class="day">
-            <th scope="row"class="day-date">06/03/2019</th>
-            <td class="day-low"><span class="temp">69</span>&deg; <span class="notation">F</span></td>
-            <td class="day-high"><span class="temp">90</span>&deg; <span class="notation">F</span></td>
+            <th scope="row" class="day-date">06/03/2019</th>
+            <td class="day-low">
+              <span class="temp">69</span>&deg; <span class="notation">F</span>
+            </td>
+            <td class="day-high">
+              <span class="temp">90</span>&deg; <span class="notation">F</span>
+            </td>
           </tr>
           <tr class="day">
-            <th scope="row"class="day-date">06/04/2019</th>
-            <td class="day-low"><span class="temp">65</span>&deg; <span class="notation">F</span></td>
-            <td class="day-high"><span class="temp">88</span>&deg; <span class="notation">F</span></td>
+            <th scope="row" class="day-date">06/04/2019git</th>
+            <td class="day-low">
+              <span class="temp">65</span>&deg; <span class="notation">F</span>
+            </td>
+            <td class="day-high">
+              <span class="temp">88</span>&deg; <span class="notation">F</span>
+            </td>
           </tr>
         </tbody>
       </table>
 
       <div id="viz"></div>
 
-    </div><!-- container -->
+      <h2>Exploring SVG Graphics</h2>
+
+      <div id="viz">
+        <svg width="600" height="400" style="background: #93A1A1">
+          <line
+            x1="0"
+            y1="200"
+            x2="600"
+            y2="300"
+            style="stroke: #268BD2; stroke-width: 40px"
+          />
+
+          <rect
+            x="200"
+            y="100"
+            width="200"
+            height="200"
+            style="fill: #CB4B19;"
+          />
+
+          <circle cx="300" cy="200" r="50" style="fill: #840043" />
+
+          <text
+            x="10"
+            y="390"
+            font-family="Montserrat"
+            font-size="25"
+            fill="white"
+          >
+            ficktastic
+          </text>
+
+          <g id="triangle">
+            <polyline points="10 35, 30 10, 50 35" style="fill: #F7B330" />
+          </g>
+
+          <use xlink:href="#triangle" x="30" y="0" />
+        </svg>
+
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="126.000000pt"
+          height="81.000000pt"
+          viewBox="0 0 126.000000 81.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,81.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M362 447 l-262 -262 65 -65 65 -65 203 203 202 202 202 -202 203
+-203 65 65 65 65 -262 262 c-145 145 -267 263 -273 263 -6 0 -128 -118 -273
+-263z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- container -->
     <script src="js/libraries/jquery/jquery.min.js"></script>
     <script src="js/libraries/bootstrap/bootstrap.min.js"></script>
     <script src="js/libraries/d3/d3.min.js"></script>
