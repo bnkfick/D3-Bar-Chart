@@ -79,7 +79,7 @@ d3.json('js/data/forecast.json', function(d) {
         .range([0,height]);
     
     yAxisValues = d3.scaleLinear()
-        .domain([0, d3.max(temperatures)])
+        .domain([0, 'd3.max(temperatures)'])
         .range([height,0]);
     
     yAxisTicks = d3.axisLeft(yAxisValues)
